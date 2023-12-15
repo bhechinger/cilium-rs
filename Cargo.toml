@@ -1,0 +1,16 @@
+[package]
+name = "cilium"
+version = "1.14.4"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+k8s-openapi = { version = "0.20.0", features = ["v1_28"] }
+kube = { version = "0.87.1", default-features = true, features = [
+    "derive",
+    "runtime",
+] }
+schemars = "0.8"
+serde = "1"
+serde_json = "1.0"

@@ -1,0 +1,11 @@
+pub mod ciliumcidrgroups;
+pub mod ciliumclusterwidenetworkpolicies;
+pub mod ciliumendpoints;
+pub mod ciliumexternalworkloads;
+pub mod ciliumidentities;
+pub mod ciliuml2announcementpolicies;
+pub mod ciliumloadbalancerippools;
+pub mod ciliumnetworkpolicies;
+pub mod ciliumnodeconfigs;
+pub mod ciliumnodes;
+pub mod ciliumpodippools;
