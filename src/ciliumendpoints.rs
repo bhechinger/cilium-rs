@@ -2,7 +2,7 @@
 // kopium command: kopium ciliumendpoints.cilium.io -A
 // kopium version: 0.16.2
 
-
+use kube::CustomResource;
 use schemars::JsonSchema;
 use serde::{Serialize, Deserialize};
 use std::collections::BTreeMap;

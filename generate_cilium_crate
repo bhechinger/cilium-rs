@@ -7,4 +7,10 @@ for i in $(kubectl get crd | awk '/cilium/ { print $1 }'); do
   echo "pub mod ${FILENAME};" >> src/lib.rs
 done
 
+git add -A
+git commit -m "generated code"
+
 cargo fix --lib -p cilium
+
+git add -A
+git commit -m "cargo fixed code"
