@@ -6,3 +6,5 @@ for i in $(kubectl get crd | awk '/cilium/ { print $1 }'); do
   kopium ${i} -A > src/${FILENAME}.rs
   echo "pub mod ${FILENAME};" >> src/lib.rs
 done
+
+cargo fix --lib -p cilium
