@@ -1,5 +1,5 @@
 {
-  description = "Payrails Secure Vault";
+  description = "cilium-rs";
 
   inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
